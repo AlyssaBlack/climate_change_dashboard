@@ -98,7 +98,8 @@ def compute_and_store_models(df, regions, target):
 
 if __name__ == '__main__':
     # Load data
-    all_data = pd.read_csv('WDIData.csv', index_col=None)
+    #all_data = pd.read_csv('WDIData.csv', index_col=None)
+    all_data = pd.read_csv('climate_data.csv', index_col=None) #truncated data for ease of sharing on github
     df = preprocess_data(all_data, regions, target)
     compute_and_store_models(df, regions, target)
              

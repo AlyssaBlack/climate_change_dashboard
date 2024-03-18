@@ -1,5 +1,5 @@
 import pandas as pd
-from config import features_list, target
+from config import features_list, target, regions
 
 
 def preprocess_data(all_data, regions, target):
@@ -21,3 +21,4 @@ def preprocess_data(all_data, regions, target):
     df = df.sort_values(by=['Country Code', 'Year'])
 
     return df
+
