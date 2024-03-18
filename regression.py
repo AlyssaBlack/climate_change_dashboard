@@ -3,6 +3,7 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.feature_selection import RFE
 from sklearn.metrics import r2_score
 from sklearn.model_selection import TimeSeriesSplit
+from sklearn.preprocessing import StandardScaler
 import numpy as np
 from data_processing import preprocess_data
 import pickle
@@ -30,9 +31,13 @@ def get_regression_predictions_for_region_and_target(df, region_code, target):
     X = df_region[features]
     Y = df_region[target]
 
+    # Scale features
+    scaler = StandardScaler()
+    X_scaled = pd.DataFrame(scaler.fit_transform(X), columns=X.columns)
+
     # Manually split the dataset into training and test sets to preserve time order
-    split_index = int(len(X) * 0.8)
-    X_train_full, X_test = X.iloc[:split_index], X.iloc[split_index:]
+    split_index = int(len(X_scaled) * 0.8)
+    X_train_full, X_test = X_scaled.iloc[:split_index], X_scaled.iloc[split_index:]
     Y_train_full, Y_test = Y.iloc[:split_index], Y.iloc[split_index:]
 
     # Initialize TimeSeriesSplit
@@ -43,7 +48,7 @@ def get_regression_predictions_for_region_and_target(df, region_code, target):
         X_train, y_train = X_train_full.iloc[train_index], Y_train_full.iloc[train_index]
 
         # Initialize the Random Forest model
-        model = RandomForestRegressor(n_estimators=100, random_state=42)
+        model = RandomForestRegressor(n_estimators=200, random_state=42)
 
         # Apply RFE for feature selection
         selector = RFE(model, n_features_to_select=5, step=1)
@@ -70,7 +75,7 @@ def get_regression_predictions_for_region_and_target(df, region_code, target):
     # Prepare the final DataFrame for return
     df_predictions = {
         'y_real': Y.values,
-        'y_predict': model.predict(X[consistent_features]),
+        'y_predict': model.predict(X_scaled[consistent_features]),
     }
 
     # Add top feature columns to the predictions DataFrame for plotting

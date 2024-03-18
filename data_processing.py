@@ -21,4 +21,3 @@ def preprocess_data(all_data, regions, target):
     df = df.sort_values(by=['Country Code', 'Year'])
 
     return df
-

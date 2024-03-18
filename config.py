@@ -14,9 +14,9 @@ features_list = [
 ]
 
 regions = {
-    'ARB': 'Arab World', 'AFE': 'Africa Eastern and Southern', 
-    'EAS': 'East Asia & Pacific', 'ECS': 'Europe & Central Asia', 
-    'LCN': 'Latin America & Caribbean', 'MEA': 'Middle East & North Africa', 
+    'ARB': 'Arab World', 'EAS': 'East Asia & Pacific', 
+    'ECS': 'Europe & Central Asia', 'LCN': 'Latin America & Caribbean', 
+    'MEA': 'Middle East & North Africa', 
     'NAC': 'North America', 'SAS': 'South Asia', 
     'SSF': 'Sub-Saharan Africa', 'WLD': 'World'
 }
