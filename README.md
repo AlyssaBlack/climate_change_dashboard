@@ -38,14 +38,17 @@ After starting the app, navigate to http://127.0.0.1:8050/ in your web browser t
 2. **Choose a Region:** Select a region for focused analysis on the selected risk.
 3. **Investigate Contributing Factors:** Select a factor to understand its effect on the chosen environmental risk.
 
-  <img width="1624" alt="Screenshot 2024-03-25 at 1 35 44 AM" src="https://github.com/AlyssaBlack/climate_change_dashboard/assets/10644266/e1630cf1-c738-4498-8f5d-430935f3c86f"> 
+<img width="1646" alt="Screenshot 2024-03-25 at 2 11 04 AM" src="https://github.com/AlyssaBlack/climate_change_dashboard/assets/10644266/b67c99ea-aee0-4e7b-b963-16baad87c68c">
 
+  
 4. **Analysis of Predictions vs. Real Data:** A scatter plot displays the comparison between actual outcomes and predictions for the selected factor.
 
-<img width="1582" alt="Screenshot 2024-03-25 at 1 38 06 AM" src="https://github.com/AlyssaBlack/climate_change_dashboard/assets/10644266/574c7ee0-4ea3-4474-b9a3-f0b77afcd328">
+<img width="1401" alt="Screenshot 2024-03-25 at 2 12 23 AM" src="https://github.com/AlyssaBlack/climate_change_dashboard/assets/10644266/47459dd6-f4ec-4293-b8cc-4c041789f8d2">
+
 
 5. **Deep Dive with SHAP Values:** Explore the significance and direction of each feature's impact on the risk assessment through a SHAP summary plot.
 
+<img width="1121" alt="Screenshot 2024-03-25 at 2 15 48 AM" src="https://github.com/AlyssaBlack/climate_change_dashboard/assets/10644266/a9d47e70-75a7-46d1-89eb-9e406bfbf81f">
 
 
 ## Advanced Usage
