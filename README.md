@@ -13,7 +13,7 @@ EcoRisk Insights offers a multi-faceted analysis of environmental risks across d
 ## Methodology
 The analysis is powered by decision trees for regression, with the selection of relevant features through a TimeSeriesSplit method. This approach ensures accuracy by acknowledging the chronological order of data. The final selection of features is based on their consistent impact across various analyses, ensuring the reliability of insights.
 
-The dashboard calculates the coefficient of determination (R²) by setting aside the last 20% of the data set, offering a robust measure of model accuracy in predicting energy depletion trends.
+The dashboard calculates the coefficient of determination (R²) by setting aside the last 20% of the data set, offering a robust measure of model accuracy in predicting environmental risks.
 
 ## Installation
 To set up the dashboard locally, follow these steps:
