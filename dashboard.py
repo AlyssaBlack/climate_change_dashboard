@@ -105,7 +105,7 @@ def create_dash_app(precomputed_results):
             ),
             style={'text-align': 'center'}
         )
-    ])
+    ], style={'padding-bottom': '80px'})
 
     @app.callback(
         [
@@ -169,7 +169,7 @@ def create_dash_app(precomputed_results):
             df_predictions = pd.DataFrame(region_results['predictions'])
 
             if selected_feature and not df_predictions.empty:
-                wrapped_title = "<br>".join(textwrap.wrap(f"{selected_region}: Actual vs. Predicted {selected_target} by {selected_feature}", width=500))
+                wrapped_title = "<br>".join(textwrap.wrap(f"{selected_region}: Actual vs. Predicted {selected_target} by {selected_feature}", width=100))
 
                 fig.add_trace(go.Scatter(x=df_predictions[selected_feature], y=df_predictions['y_real'],
                                          mode='markers', name='Actual'))

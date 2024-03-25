@@ -145,7 +145,7 @@ def get_shap(model, X):
     })
 
     # Customize font sizes for the plot here
-    plt.title('Feature Impact: Understanding Risk Contributors', fontsize=10)
+    plt.title('Feature Impact: Understanding Risk Contributors', fontsize=8)
     plt.xlabel('Contribution to Prediction (SHAP Value)', fontsize=6)
     plt.ylabel('Features', fontsize=6)
 
