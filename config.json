@@ -1,0 +1,22 @@
+{
+    "regions": {
+        "ARB": "Arab World",
+        "AFE": "Africa Eastern and Southern",
+        "EAS": "East Asia & Pacific",
+        "ECS": "Europe & Central Asia",
+        "LCN": "Latin America & Caribbean",
+        "MEA": "Middle East & North Africa",
+        "NAC": "North America",
+        "SAS": "South Asia",
+        "SSF": "Sub-Saharan Africa",
+        "WLD": "World"
+    },
+    "potential_targets": [
+        "Total greenhouse gas emissions (% change from 1990)",
+        "Renewable energy consumption (% of total final energy consumption)",
+        "Population living in areas where elevation is below 5 meters (% of total population)",
+        "Adjusted savings: energy depletion (% of GNI)", 
+        "Annual freshwater withdrawals, total (% of internal resources)"
+   ]
+
+}

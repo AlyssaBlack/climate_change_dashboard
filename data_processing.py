@@ -1,11 +1,8 @@
 import pandas as pd
-from config import features_list, target, regions
 
-
-def preprocess_data(all_data, regions, target):
+def preprocess_data(all_data, regions): #, target):
     # Keep regional data, drop individual countries, drop redundant columns
     df = all_data[all_data['Country Code'].isin(regions.keys())]
-    df = df[df['Indicator Name'].isin(features_list+[target])]
     df = df.drop(['Country Name', 'Indicator Code'], axis=1)
 
     # Melt the DataFrame
@@ -21,3 +18,4 @@ def preprocess_data(all_data, regions, target):
     df = df.sort_values(by=['Country Code', 'Year'])
 
     return df
+
