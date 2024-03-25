@@ -7,7 +7,7 @@ EcoRisk Insights offers a multi-faceted analysis of environmental risks across d
 - **Targeted Risk Analysis:** Allows users to examine specific environmental risks in detail, expanding the analysis beyond energy depletion.
 - **Region-Specific Exploration:** Users can conduct analyses tailored to different regions, identifying unique environmental challenges and impacts.
 - **Dynamic Factor Analysis:** The dashboard dynamically presents key factors influencing the chosen environmental risk, offering insight into their contributory roles.
-- **Predictive Insights:** Utilizes Random Forest Regression for predictions based on historical data, enhanced by R² metrics for assessing model accuracy.
+- **Predictive Insights:** Utilizes Random Forest Regression for predictions based on historical data, with R² metrics for assessing model accuracy.
 - **SHAP Value Visualization:** Incorporates SHAP (SHapley Additive exPlanations) values to depict the impact of each feature on the target variable, improving interpretability and deepening insights into factor influence.
 
 ## Methodology
@@ -41,8 +41,12 @@ After starting the app, navigate to http://127.0.0.1:8050/ in your web browser t
   <img width="1624" alt="Screenshot 2024-03-25 at 1 35 44 AM" src="https://github.com/AlyssaBlack/climate_change_dashboard/assets/10644266/e1630cf1-c738-4498-8f5d-430935f3c86f"> 
 
 4. **Analysis of Predictions vs. Real Data:** A scatter plot displays the comparison between actual outcomes and predictions for the selected factor.
+
 <img width="1582" alt="Screenshot 2024-03-25 at 1 38 06 AM" src="https://github.com/AlyssaBlack/climate_change_dashboard/assets/10644266/574c7ee0-4ea3-4474-b9a3-f0b77afcd328">
+
 5. **Deep Dive with SHAP Values:** Explore the significance and direction of each feature's impact on the risk assessment through a SHAP summary plot.
+
+
 
 ## Advanced Usage
 Interested users can recompute the predictive models to reflect new data or analytical perspectives. Simply execute:
